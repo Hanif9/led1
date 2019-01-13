@@ -10,6 +10,17 @@ https://pchelp.ricmedia.com/setup-lamp-server-raspberry-pi-3-complete-diy-guide/
 
 instalasi cukup sampai PHP saja
 
+## EDIT SUDOERS
+buka file sudoers di
+```
+/etc/sudoers
+```
+tambahkan ini dibaris paling akhir
+```
+www-data ALL=(ALL) NOPASSWD:ALL
+```
+
+
 ## file-file diletakkan dalam direktori
 ```
 /var/www/html
